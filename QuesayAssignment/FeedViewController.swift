@@ -18,12 +18,16 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         feedTableView.dataSource = self
     }
     
+    let rainbow: [UIColor] = [.red, .yellow, .green, .orange, .blue, .purple, .magenta]
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return rainbow.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = feedTableView.dequeueReusableCell(withIdentifier: "colorCell", for: indexPath)
+        cell.backgroundColor = rainbow[indexPath.item]
+        return cell
     }
 
     /*
