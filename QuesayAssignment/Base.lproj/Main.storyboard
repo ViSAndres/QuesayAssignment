@@ -31,10 +31,25 @@
                     <view key="view" contentMode="scaleToFill" id="ONh-pZ-GpU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I9c-Lh-lZL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="XaL-qL-vJa"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="I9c-Lh-lZL" firstAttribute="top" secondItem="XaL-qL-vJa" secondAttribute="top" id="JHO-Ob-40f"/>
+                            <constraint firstItem="XaL-qL-vJa" firstAttribute="trailing" secondItem="I9c-Lh-lZL" secondAttribute="trailing" id="Leh-b0-eDC"/>
+                            <constraint firstItem="XaL-qL-vJa" firstAttribute="bottom" secondItem="I9c-Lh-lZL" secondAttribute="bottom" id="nOC-w9-l6A"/>
+                            <constraint firstItem="I9c-Lh-lZL" firstAttribute="leading" secondItem="XaL-qL-vJa" secondAttribute="leading" id="qTX-dj-GxC"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="note" catalog="system" id="bJM-Uk-MEv"/>
+                    <connections>
+                        <outlet property="feedTableView" destination="I9c-Lh-lZL" id="srN-PW-03W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nSJ-qn-OSi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,6 +77,9 @@
     <resources>
         <image name="brain.head.profile" catalog="system" width="114" height="128"/>
         <image name="note" catalog="system" width="128" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
