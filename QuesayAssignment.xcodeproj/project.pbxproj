@@ -12,6 +12,7 @@
 		D48BCECA27B1BF7A0075E2E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48BCEC827B1BF7A0075E2E1 /* Main.storyboard */; };
 		D48BCECC27B1BF7B0075E2E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48BCECB27B1BF7B0075E2E1 /* Assets.xcassets */; };
 		D48BCECF27B1BF7B0075E2E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48BCECD27B1BF7B0075E2E1 /* LaunchScreen.storyboard */; };
+		D48BCED927B1CDB90075E2E1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BCED827B1CDB90075E2E1 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D48BCECB27B1BF7B0075E2E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D48BCECE27B1BF7B0075E2E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D48BCED027B1BF7B0075E2E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48BCED827B1CDB90075E2E1 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				D48BCEC227B1BF7A0075E2E1 /* AppDelegate.swift */,
+				D48BCED827B1CDB90075E2E1 /* FeedViewController.swift */,
 				D48BCEC427B1BF7A0075E2E1 /* SceneDelegate.swift */,
 				D48BCEC827B1BF7A0075E2E1 /* Main.storyboard */,
 				D48BCECB27B1BF7B0075E2E1 /* Assets.xcassets */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D48BCEC327B1BF7A0075E2E1 /* AppDelegate.swift in Sources */,
+				D48BCED927B1CDB90075E2E1 /* FeedViewController.swift in Sources */,
 				D48BCEC527B1BF7A0075E2E1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
