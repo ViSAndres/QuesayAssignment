@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D424B45F27B32A0700B5A78A /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D424B45E27B32A0700B5A78A /* PostTableViewCell.swift */; };
 		D48BCEC327B1BF7A0075E2E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BCEC227B1BF7A0075E2E1 /* AppDelegate.swift */; };
 		D48BCEC527B1BF7A0075E2E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BCEC427B1BF7A0075E2E1 /* SceneDelegate.swift */; };
 		D48BCECA27B1BF7A0075E2E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48BCEC827B1BF7A0075E2E1 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D424B45E27B32A0700B5A78A /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		D48BCEBF27B1BF7A0075E2E1 /* QuesayAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuesayAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48BCEC227B1BF7A0075E2E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D48BCEC427B1BF7A0075E2E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				D48BCEC227B1BF7A0075E2E1 /* AppDelegate.swift */,
 				D48BCED827B1CDB90075E2E1 /* FeedViewController.swift */,
 				D48BCEC427B1BF7A0075E2E1 /* SceneDelegate.swift */,
+				D424B45E27B32A0700B5A78A /* PostTableViewCell.swift */,
 				D48BCEC827B1BF7A0075E2E1 /* Main.storyboard */,
 				D48BCECB27B1BF7B0075E2E1 /* Assets.xcassets */,
 				D48BCECD27B1BF7B0075E2E1 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				D48BCEC327B1BF7A0075E2E1 /* AppDelegate.swift in Sources */,
 				D48BCED927B1CDB90075E2E1 /* FeedViewController.swift in Sources */,
 				D48BCEC527B1BF7A0075E2E1 /* SceneDelegate.swift in Sources */,
+				D424B45F27B32A0700B5A78A /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,7 +25,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = feedTableView.dequeueReusableCell(withIdentifier: "colorCell", for: indexPath)
+        let cell = feedTableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath)
         cell.backgroundColor = rainbow[indexPath.item]
         return cell
     }

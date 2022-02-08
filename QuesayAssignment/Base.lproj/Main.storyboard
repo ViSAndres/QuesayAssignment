@@ -36,13 +36,41 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="colorCell" id="bQa-MY-1mm">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="352" id="bQa-MY-1mm" customClass="PostTableViewCell" customModule="QuesayAssignment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="352"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bQa-MY-1mm" id="r5j-cF-sEt">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="352"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fAX-cR-qX2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="151"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CW-Ce-72W">
+                                                    <rect key="frame" x="20" y="185" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAp-hQ-i1x">
+                                                    <rect key="frame" x="20" y="214" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7CW-Ce-72W" firstAttribute="top" secondItem="fAX-cR-qX2" secondAttribute="bottom" id="3Hl-js-xIY"/>
+                                                <constraint firstItem="7CW-Ce-72W" firstAttribute="leading" secondItem="r5j-cF-sEt" secondAttribute="leadingMargin" id="8P7-W1-vlA"/>
+                                                <constraint firstItem="MAp-hQ-i1x" firstAttribute="top" secondItem="7CW-Ce-72W" secondAttribute="bottom" id="ng5-Tq-NNp"/>
+                                                <constraint firstItem="MAp-hQ-i1x" firstAttribute="leading" secondItem="r5j-cF-sEt" secondAttribute="leadingMargin" id="oJc-Hc-HTn"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="postImage" destination="fAX-cR-qX2" id="96g-f9-j0p"/>
+                                            <outlet property="postText" destination="MAp-hQ-i1x" id="YaH-4q-pwC"/>
+                                            <outlet property="postTitle" destination="7CW-Ce-72W" id="bEk-hk-CS3"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -63,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nSJ-qn-OSi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="658" y="-542"/>
+            <point key="canvasLocation" x="656.52173913043487" y="-542.41071428571422"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2zD-4T-LW2">
