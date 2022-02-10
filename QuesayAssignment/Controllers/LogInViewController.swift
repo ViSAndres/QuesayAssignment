@@ -30,12 +30,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
             let signUpInfo = [name, email, password, age, country]
             createFirebaseUser(userLoginInfo: signUpInfo)
         } else {
-            let dialogMessage = UIAlertController(title: "Oops", message: "Please fill in all info.", preferredStyle: .alert)
-            let ok = UIAlertAction(title: "Cloe", style: .default, handler: { (action) -> Void in
-                 print("Ok button tapped")
-            })
-             dialogMessage.addAction(ok)
-             self.present(dialogMessage, animated: true, completion: nil)
+            showEmptyFieldError()
         }
     }
     
@@ -59,6 +54,15 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         let mainTabBarController = storyboard.instantiateViewController(identifier: "FeedViewController")
         mainTabBarController.modalPresentationStyle = .fullScreen
         self.present(mainTabBarController, animated: true, completion: nil)
+    }
+    
+    private func showEmptyFieldError() {
+        let dialogMessage = UIAlertController(title: "Oops", message: "Please fill in all info.", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "Cloe", style: .default, handler: { (action) -> Void in
+             print("Ok button tapped")
+        })
+         dialogMessage.addAction(ok)
+         self.present(dialogMessage, animated: true, completion: nil)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
