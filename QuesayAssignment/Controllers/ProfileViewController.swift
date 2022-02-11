@@ -19,14 +19,19 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         And learn the beautiful art
         Of self-encouragement.
     """
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        makeProfileCircular()
+        setUserInfo()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateUserInfo()
         profileTableView.delegate = self
         profileTableView.dataSource = self
-        
-        setUserInfo()
     }
     
     private func setUserInfo() {
@@ -75,6 +80,14 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
     }
     
+    private func updateUserInfo() {
+        setUserInfo()
+    }
+    
+    private func makeProfileCircular() {
+        profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
+        profileImage.clipsToBounds = true
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 25

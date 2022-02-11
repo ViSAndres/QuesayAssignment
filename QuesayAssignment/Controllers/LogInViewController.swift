@@ -28,20 +28,18 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
            let age = ageField.text,
            let country = countryField.text {
             let signUpInfo = [name, email, password, age, country]
-            createFirebaseUser(userLoginInfo: signUpInfo)
+            createFirebaseUser(userSignUpInfo: signUpInfo)
         } else {
             showEmptyFieldError()
         }
     }
     
-    private func createFirebaseUser(userLoginInfo: [String]) {
+    private func createFirebaseUser(userSignUpInfo: [String]) {
         let firebaseManager = FirebaseAuthManager()
-        firebaseManager.createUser(signUpInfo: userLoginInfo) {[weak self] (success) in
+        firebaseManager.createUser(signUpInfo: userSignUpInfo) {[weak self] (success) in
             guard self != nil else { return }
             if (success) {
-                let firestore = FirebaseFirestoreManager()
-                firestore.setUserInfo(userInfo: userLoginInfo)
-                print("User was sucessfully created.")
+                self!.storeNewUserData(userLoginInfo: userSignUpInfo)
                 self!.leaveLoginScreen()
             } else {
                 print("There was an error.")
@@ -63,6 +61,12 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         })
          dialogMessage.addAction(ok)
          self.present(dialogMessage, animated: true, completion: nil)
+    }
+    
+    private func storeNewUserData(userLoginInfo: [String]) {
+        let firestore = FirebaseFirestoreManager()
+        firestore.setUserInfo(userInfo: userLoginInfo)
+        print("User was sucessfully created.")
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
