@@ -10,6 +10,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         feedTableView.delegate = self
         feedTableView.dataSource = self
+        
+        self.feedTableView.register(UINib.init(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: "PostCell")
     }
     
     let infoMessage = """
@@ -29,12 +31,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = feedTableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostTableViewCell
+        let cell = feedTableView.dequeueReusableCell(withIdentifier: "NewPostCell", for: indexPath) as! PostTabelViewCell
         cell.selectionStyle = .none
-        cell.feedPostTitle?.text = "I will show you the way"
-        cell.feedPostText?.text = infoMessage
-        cell.feedPostImage?.image = UIImage(named: "ugandanknuck")
-        cell.feedUserName?.text = Auth.auth().currentUser?.displayName
+        cell.postImage.image = UIImage(named: "ugandanknuck")
+        cell.postTitle.text = "Hiiiiii :)"
+        cell.postTextBody.text = infoMessage
+        
         return cell
     }
     

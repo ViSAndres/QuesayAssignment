@@ -11,11 +11,12 @@
 		570E5BB827B47BA4003A7F35 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E5BB727B47BA4003A7F35 /* LogInViewController.swift */; };
 		570E5BBA27B48C49003A7F35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 570E5BB927B48C49003A7F35 /* GoogleService-Info.plist */; };
 		570E5BBE27B4ABED003A7F35 /* FirebaseFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E5BBD27B4ABED003A7F35 /* FirebaseFirestoreManager.swift */; };
+		570E5BC127B8E661003A7F35 /* PostTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E5BBF27B8E661003A7F35 /* PostTabelViewCell.swift */; };
+		570E5BC227B8E661003A7F35 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 570E5BC027B8E661003A7F35 /* PostTableViewCell.xib */; };
 		578B07E227B438BE00D87019 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578B07E127B438BE00D87019 /* ProfileViewController.swift */; };
 		578B07E727B4759100D87019 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 578B07E627B4759100D87019 /* FirebaseAnalytics */; };
 		578B07E927B4759100D87019 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 578B07E827B4759100D87019 /* FirebaseAuth */; };
 		578B07EB27B4759100D87019 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 578B07EA27B4759100D87019 /* FirebaseFirestore */; };
-		D424B45F27B32A0700B5A78A /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D424B45E27B32A0700B5A78A /* PostTableViewCell.swift */; };
 		D48BCEC327B1BF7A0075E2E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BCEC227B1BF7A0075E2E1 /* AppDelegate.swift */; };
 		D48BCEC527B1BF7A0075E2E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BCEC427B1BF7A0075E2E1 /* SceneDelegate.swift */; };
 		D48BCECA27B1BF7A0075E2E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48BCEC827B1BF7A0075E2E1 /* Main.storyboard */; };
@@ -29,8 +30,9 @@
 		570E5BB727B47BA4003A7F35 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		570E5BB927B48C49003A7F35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		570E5BBD27B4ABED003A7F35 /* FirebaseFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFirestoreManager.swift; sourceTree = "<group>"; };
+		570E5BBF27B8E661003A7F35 /* PostTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTabelViewCell.swift; sourceTree = "<group>"; };
+		570E5BC027B8E661003A7F35 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		578B07E127B438BE00D87019 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		D424B45E27B32A0700B5A78A /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		D48BCEBF27B1BF7A0075E2E1 /* QuesayAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuesayAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48BCEC227B1BF7A0075E2E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D48BCEC427B1BF7A0075E2E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				578B07E127B438BE00D87019 /* ProfileViewController.swift */,
-				D424B45E27B32A0700B5A78A /* PostTableViewCell.swift */,
 				D48BCED827B1CDB90075E2E1 /* FeedViewController.swift */,
 				570E5BB727B47BA4003A7F35 /* LogInViewController.swift */,
 			);
@@ -73,6 +74,25 @@
 				570E5BBD27B4ABED003A7F35 /* FirebaseFirestoreManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		57ABA84E27BB3CDC00262270 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57ABA84F27BB3D7500262270 /* PostTableViewCell */,
+				D48BCEC827B1BF7A0075E2E1 /* Main.storyboard */,
+				D48BCECD27B1BF7B0075E2E1 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		57ABA84F27BB3D7500262270 /* PostTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				570E5BBF27B8E661003A7F35 /* PostTabelViewCell.swift */,
+				570E5BC027B8E661003A7F35 /* PostTableViewCell.xib */,
+			);
+			path = PostTableViewCell;
 			sourceTree = "<group>";
 		};
 		D48BCEB627B1BF7A0075E2E1 = {
@@ -97,10 +117,9 @@
 				D48BCEC227B1BF7A0075E2E1 /* AppDelegate.swift */,
 				D48BCEC427B1BF7A0075E2E1 /* SceneDelegate.swift */,
 				578B07EF27B4792F00D87019 /* Managers */,
+				57ABA84E27BB3CDC00262270 /* Views */,
 				578B07EE27B478F100D87019 /* Controllers */,
-				D48BCEC827B1BF7A0075E2E1 /* Main.storyboard */,
 				D48BCECB27B1BF7B0075E2E1 /* Assets.xcassets */,
-				D48BCECD27B1BF7B0075E2E1 /* LaunchScreen.storyboard */,
 				D48BCED027B1BF7B0075E2E1 /* Info.plist */,
 				570E5BB927B48C49003A7F35 /* GoogleService-Info.plist */,
 			);
@@ -176,6 +195,7 @@
 				D48BCECF27B1BF7B0075E2E1 /* LaunchScreen.storyboard in Resources */,
 				570E5BBA27B48C49003A7F35 /* GoogleService-Info.plist in Resources */,
 				D48BCECC27B1BF7B0075E2E1 /* Assets.xcassets in Resources */,
+				570E5BC227B8E661003A7F35 /* PostTableViewCell.xib in Resources */,
 				D48BCECA27B1BF7A0075E2E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,7 +214,7 @@
 				570E5BB827B47BA4003A7F35 /* LogInViewController.swift in Sources */,
 				578B07E227B438BE00D87019 /* ProfileViewController.swift in Sources */,
 				D48BCEC527B1BF7A0075E2E1 /* SceneDelegate.swift in Sources */,
-				D424B45F27B32A0700B5A78A /* PostTableViewCell.swift in Sources */,
+				570E5BC127B8E661003A7F35 /* PostTabelViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
