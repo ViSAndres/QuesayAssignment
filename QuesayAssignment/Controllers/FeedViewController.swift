@@ -31,9 +31,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = feedTableView.dequeueReusableCell(withIdentifier: "NewPostCell", for: indexPath) as! PostTableViewCell
+        let cell = feedTableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostTableViewCell
         cell.selectionStyle = .none
-        cell.postImage.image = UIImage(named: "ugandanknuck")
+        cell.postImage.image = UIImage(named: "happy")
         cell.postTitle.text = "Hiiiiii :)"
         cell.postTextBody.text = infoMessage
         

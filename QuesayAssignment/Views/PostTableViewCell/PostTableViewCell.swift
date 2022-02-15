@@ -32,9 +32,9 @@ class PostTableViewCell: UITableViewCell {
         postTextView.layer.cornerRadius = 15
         postTextView.clipsToBounds = true
         postTextView.layer.shadowColor = UIColor.black.cgColor
-        postTextView.layer.shadowOffset = CGSize(width: 1, height: 1)
-        postTextView.layer.shadowOpacity = 0.25
-        postTextView.layer.shadowRadius = 2.0
+        postTextView.layer.shadowOffset = CGSize(width: 2, height: 2)
+        postTextView.layer.shadowOpacity = 0.7
+        postTextView.layer.shadowRadius = 4.0
         postLikeButton.layer.cornerRadius = 10
         postLikeButton.layer.shadowColor = UIColor.black.cgColor
         postLikeButton.layer.shadowOffset = CGSize(width: 1, height: 1)
