@@ -28,6 +28,8 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.profileTableView.register(UINib.init(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: "PostCell")
+
         
         updateUserInfo()
         profileTableView.delegate = self
@@ -101,7 +103,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.selectionStyle = .none
         cell.postTitle.text = "I will show you the way"
         cell.postTextBody.text = infoMessage
-        cell.postImage.image = UIImage(named: "ugandanknuck")
+        cell.postImage.image = UIImage(named: "happy")
         return cell
     }
 }
