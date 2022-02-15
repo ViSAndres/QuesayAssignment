@@ -99,9 +99,9 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = profileTableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostTableViewCell
         cell.selectionStyle = .none
-        cell.profilePostTitle?.text = "I will show you the way"
-        cell.profilePostText?.text = infoMessage
-        cell.profilePostImage?.image = UIImage(named: "ugandanknuck")
+        cell.postTitle.text = "I will show you the way"
+        cell.postTextBody.text = infoMessage
+        cell.postImage.image = UIImage(named: "ugandanknuck")
         return cell
     }
 }

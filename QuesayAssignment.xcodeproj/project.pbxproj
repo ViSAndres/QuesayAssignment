@@ -11,7 +11,7 @@
 		570E5BB827B47BA4003A7F35 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E5BB727B47BA4003A7F35 /* LogInViewController.swift */; };
 		570E5BBA27B48C49003A7F35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 570E5BB927B48C49003A7F35 /* GoogleService-Info.plist */; };
 		570E5BBE27B4ABED003A7F35 /* FirebaseFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E5BBD27B4ABED003A7F35 /* FirebaseFirestoreManager.swift */; };
-		570E5BC127B8E661003A7F35 /* PostTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E5BBF27B8E661003A7F35 /* PostTabelViewCell.swift */; };
+		570E5BC127B8E661003A7F35 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570E5BBF27B8E661003A7F35 /* PostTableViewCell.swift */; };
 		570E5BC227B8E661003A7F35 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 570E5BC027B8E661003A7F35 /* PostTableViewCell.xib */; };
 		578B07E227B438BE00D87019 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578B07E127B438BE00D87019 /* ProfileViewController.swift */; };
 		578B07E727B4759100D87019 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 578B07E627B4759100D87019 /* FirebaseAnalytics */; };
@@ -30,7 +30,7 @@
 		570E5BB727B47BA4003A7F35 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		570E5BB927B48C49003A7F35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		570E5BBD27B4ABED003A7F35 /* FirebaseFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFirestoreManager.swift; sourceTree = "<group>"; };
-		570E5BBF27B8E661003A7F35 /* PostTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTabelViewCell.swift; sourceTree = "<group>"; };
+		570E5BBF27B8E661003A7F35 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		570E5BC027B8E661003A7F35 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		578B07E127B438BE00D87019 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D48BCEBF27B1BF7A0075E2E1 /* QuesayAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuesayAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,8 +89,8 @@
 		57ABA84F27BB3D7500262270 /* PostTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				570E5BBF27B8E661003A7F35 /* PostTabelViewCell.swift */,
 				570E5BC027B8E661003A7F35 /* PostTableViewCell.xib */,
+				570E5BBF27B8E661003A7F35 /* PostTableViewCell.swift */,
 			);
 			path = PostTableViewCell;
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 				570E5BB827B47BA4003A7F35 /* LogInViewController.swift in Sources */,
 				578B07E227B438BE00D87019 /* ProfileViewController.swift in Sources */,
 				D48BCEC527B1BF7A0075E2E1 /* SceneDelegate.swift in Sources */,
-				570E5BC127B8E661003A7F35 /* PostTabelViewCell.swift in Sources */,
+				570E5BC127B8E661003A7F35 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
